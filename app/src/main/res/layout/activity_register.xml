@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/home_first_logo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_main"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Register Account"
+        android:textColor="@color/color1"
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/edt_reg_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg1"
+            android:hint="Enter username"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColor="@color/color1"
+            android:textColorHint="@color/grey" />
+
+        <EditText
+            android:id="@+id/edt_reg_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg1"
+            android:hint="Enter mobile"
+            android:padding="15dp"
+            android:inputType="number"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:textColor="@color/color1"
+            android:textColorHint="@color/grey" />
+
+        <EditText
+            android:id="@+id/edt_course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg1"
+            android:hint="Enter course"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColor="@color/color1"
+            android:textColorHint="@color/grey" />
+
+        <Button
+            android:textColor="@color/white"
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_bg"
+            android:padding="15dp"
+            android:text="Register" />
+
+    </LinearLayout>
+
+</RelativeLayout>

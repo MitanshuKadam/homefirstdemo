@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AddStudentActivity">
+
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/edt_add_Student"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg1"
+            android:hint="Enter student name"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColor="@color/color1"
+            android:textColorHint="@color/grey" />
+
+        <EditText
+            android:id="@+id/edt_add_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg1"
+            android:hint="Enter student mobile"
+            android:padding="15dp"
+            android:inputType="number"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:textColor="@color/color1"
+            android:textColorHint="@color/grey" />
+
+        <EditText
+            android:id="@+id/edt_add_course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg1"
+            android:hint="Enter student course"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColor="@color/color1"
+            android:textColorHint="@color/grey" />
+
+        <Button
+            android:textColor="@color/white"
+            android:id="@+id/btn_add_student"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_bg"
+            android:padding="15dp"
+            android:text="Add Student" />
+
+    </LinearLayout>
+
+</RelativeLayout>
